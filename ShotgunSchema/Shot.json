@@ -1,0 +1,26 @@
+{
+  "code" : {
+    "field_type": "str",
+    "field_label": "Shot Code"
+  },
+  "project" : {
+    "field_type": "ProxyEntity",
+    "field_label": "Project"
+  },
+  "sg_sequence" : {
+    "field_type": "ProxyEntity",
+    "field_label": "Sequence"
+  },
+  "tasks" : {
+    "field_type": "MultiProxyEntity",
+    "field_label": "Tasks"
+  },
+  "assets" : {
+    "field_type": "MultiProxyEntity",
+    "field_label": "Assets"
+  },
+  "sg_status_list" : {
+    "field_type": "str",
+    "field_label": "Status"
+  }
+}

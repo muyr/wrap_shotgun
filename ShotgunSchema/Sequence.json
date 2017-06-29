@@ -1,0 +1,38 @@
+{
+  "code": {
+    "field_type": "str",
+    "field_label": "Sequence Name"
+  },
+  "tasks": {
+    "field_type": "MultiProxyEntity",
+    "field_label": "Tasks"
+  },
+  "cuts" : {
+    "field_type":"MultiProxyEntity",
+    "field_label": "Cuts"
+  },
+  "sg_due_1": {
+    "field_type": "str",
+    "field_label": "Due"
+  },
+  "sg_status_list": {
+    "field_type":"str",
+    "field_label": "Status"
+  },
+  "assets":{
+    "field_type":"MultiProxyEntity",
+    "field_label": "Assets"
+  },
+  "project":{
+    "field_type": "ProxyEntity",
+    "field_label": "Project"
+  },
+  "sg_assigned_to":{
+     "field_type": "ProxyEntity",
+    "field_label": "Assigned To"
+  },
+  "shots":{
+    "field_type": "MultiProxyEntity",
+    "field_label": "Shots"
+  }
+}

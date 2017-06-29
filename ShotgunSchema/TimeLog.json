@@ -1,0 +1,46 @@
+{
+  "description": {
+    "field_type": "str",
+    "field_label": "Description"
+  },
+  "created_at": {
+    "field_type": "datetime.datetime",
+    "field_label": "Date Created",
+    "editable": false
+  },
+  "updated_at": {
+    "field_type": "datetime.datetime",
+    "field_label": "Date Updated",
+    "editable": false
+  },
+  "created_by": {
+    "field_type": "ProxyEntity",
+    "field_label": "Created by",
+    "editable": false
+  },
+  "entity": {
+    "field_type": "ProxyEntity",
+    "field_label": "Link"
+  },
+  "project": {
+    "field_type": "ProxyEntity",
+    "field_label": "Project"
+  },
+  "duration": {
+    "field_type": "int",
+    "field_label": "Duration"
+  },
+  "user": {
+    "field_type": "ProxyEntity",
+    "field_label": "Person"
+  },
+  "date": {
+    "field_type": "str",
+    "field_label": "Date"
+  },
+  "updated_by": {
+    "field_type": "ProxyEntity",
+    "field_label": "Updated by",
+    "editable": false
+  }
+}

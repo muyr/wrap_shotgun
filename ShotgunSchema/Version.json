@@ -1,0 +1,86 @@
+{
+  "code":{
+    "field_type": "str",
+    "field_label": "Version Name"
+  },
+  "sg_task":{
+    "field_type": "ProxyEntity",
+    "field_label": "Task"
+  },
+  "updated_at":{
+    "field_type": "datetime.datetime",
+    "field_label": "Date Updated",
+    "editable": false
+  },
+  "entity":{
+    "field_type": "ProxyEntity",
+    "field_label": "Link"
+  },
+  "sg_path_to_frames":{
+    "field_type": "str" ,
+    "field_label": "Path to Frames"
+  },
+  "cuts":{
+    "field_type": "MultiProxyEntity",
+    "field_label": "Cuts"
+  },
+  "description":{
+    "field_type": "str",
+    "field_label": "Description"
+  },
+  "sg_path_to_movie":{
+    "field_type": "str",
+    "field_label": "Path to Movie"
+  },
+  "created_by":{
+    "field_type": "ProxyEntity" ,
+    "field_label": "Created by",
+    "editable": false
+  },
+  "sg_link_to_movie":{
+    "field_type": "dict" ,
+    "field_label": "Link to Movie"
+  },
+  "sg_link_to_frames":{
+    "field_type": "dict",
+    "field_label": "Link to Frames"
+  },
+  "frame_count":{
+    "field_type": "int" ,
+    "field_label": "Frame Count"
+  },
+  "sg_first_frame":{
+    "field_type": "int",
+    "field_label": "First Frame"
+  },
+  "sg_last_frame":{
+    "field_type": "int",
+    "field_label": "Last Frame"
+  },
+  "sg_uploaded_movie":{
+    "field_type": "dict",
+    "field_label": "Uploaded Movie"
+  },
+  "user":{
+    "field_type": "ProxyEntity",
+    "field_label": "Artist"
+  },
+  "updated_by":{
+    "field_type": "ProxyEntity",
+    "field_label":  "Updated by",
+    "editable": false
+  },
+  "notes":{
+    "field_type": "MultiProxyEntity",
+    "field_label":  "Notes"
+  },
+  "project":{
+    "field_type": "ProxyEntity",
+    "field_label":  "Project"
+  },
+  "created_at":{
+    "field_type": "datetime.datetime" ,
+    "field_label": "Date Created",
+    "editable": false
+  }
+}

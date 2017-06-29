@@ -1,0 +1,75 @@
+{
+  "color":{
+    "field_type": "str",
+    "field_label": "Gantt Bar Color"
+  },
+  "entity": {
+    "field_type": "ProxyEntity",
+    "field_label": "Link"
+  },
+  "task_assignees":{
+    "field_type": "MultiProxyEntity",
+    "field_label": "Assigned To"
+  },
+  "duration":{
+    "field_type": "int",
+    "field_label": "Duration"
+  },
+  "downstream_tasks":{
+    "field_type": "MultiProxyEntity",
+    "field_label": "Downstream Dependency"
+  },
+  "upstream_tasks":{
+    "field_type": "MultiProxyEntity",
+    "field_label": "Upstream Dependency"
+  },
+  "content":{
+    "field_type": "str",
+    "field_label": "Task Name"
+  },
+  "sg_status_list":{
+    "field_type": "str",
+    "field_label": "Status"
+  },
+  "time_logs_sum":{
+    "field_type": "int",
+    "field_label": "Time Logged"
+  },
+  "start_date":{
+    "field_type": "str",
+    "field_label": "Start"
+  },
+  "sibling_tasks":{
+    "field_type": "MultiProxyEntity",
+    "field_label": "Sibling Tasks"
+  },
+  "due_date":{
+    "field_type": "str",
+    "field_label": "End"
+  },
+  "step":{
+   "field_type": "ProxyEntity",
+   "field_label": "Pipeline Step"
+  },
+  "time_percent_of_est":{
+    "field_type": "int",
+    "field_label": "Time Logged - % of Bid"
+  },
+  "project":{
+    "field_type": "ProxyEntity" ,
+    "field_label": "Project"
+  },
+  "time_vs_est":{
+    "field_type": "int",
+    "field_label": "Time Logged - Over/Under Bid"
+  },
+  "est_in_mins":{
+    "field_type": "int",
+    "field_label": "Bid"
+  }
+  ,
+  "sg_description":{
+    "field_type": "str",
+    "field_label": "Description"
+  }
+}

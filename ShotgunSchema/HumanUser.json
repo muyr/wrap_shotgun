@@ -1,11 +1,12 @@
 {
   "department": {
     "field_label": "Department",
-    "field_type":  "ProxyEntity"
+    "field_type": "ProxyEntity"
   },
   "email": {
     "field_label": "Email",
-    "field_type": "str"},
+    "field_type": "str"
+  },
   "firstname": {
     "field_label": "First Name",
     "field_type": "str"
@@ -20,14 +21,15 @@
   },
   "name": {
     "field_label": "Name",
-    "field_type": "str"
+    "field_type": "str",
+    "editable": false
   },
   "projects": {
     "field_label": "Projects",
-    "field_type":  "MultiProxyEntity"
+    "field_type": "MultiProxyEntity"
   },
-  "sg_status_list":{
-        "field_label": "Status",
-    "field_type":  "str"
+  "sg_status_list": {
+    "field_label": "Status",
+    "field_type": "str"
   }
 }

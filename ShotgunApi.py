@@ -127,7 +127,7 @@ class SGEntityBase(object):
         return "%s{'id':%s, '%s':'%s'}" % (
             self._display_name, self._id, self._repr_field, getattr(self, self._repr_field, MyNone))
 
-    def toPyData(self):
+    def toPyDict(self):
         resultDict = self.toShotgunEntity()
         resultDict.update(self._cache_data)
         return resultDict
@@ -154,7 +154,9 @@ class SGEntityBase(object):
                 if k not in cls._fields_.keys():
                     raise '{0} has no attribute {1}'.format(cls._sg_table, k)
                 else:
-                    filters.append([k, 'is', v if not isinstance(v, SGEntityBase) else v.toShotgunEntity()])
+                    key = cls._fields_[k].get('inner_code', k)
+                    value =  v if not isinstance(v, SGEntityBase) else v.toShotgunEntity()
+                    filters.append([key, 'is', value])
         elif len(args) == 1:
             filters.append([cls._repr_field, 'is', args[0]])
         else:
@@ -272,14 +274,20 @@ ProjectPerson = CustomEntity02
 
 if __name__ == '__main__':
     # user = HumanUser.fromString('postgres')
+    # print user.name
     # Task.query_dict(task_assignees=user)
     # task = Task(24779)
     # print task.task_assignees
     # t = Task()
     # t.content = 'test'
     # print t
-    i = MyPerson.fromString('muyanru')
+    # i = MyPerson.fromString('muyanru')
     # p = Project.fromString()
     # ProjectPerson.query(name='muyanru', project=)
-    print i.sg_project_people
-    print i._display_name
+    # print i.sg_project_people
+    # print i._display_name
+    # seq = Sequence.fromString('pl')
+    # prj = Project.fromString('wkz-test')
+    # print seq, prj
+    # print Task.query(sg_asset_type='prp', project=prj, sg_status_list='ip')
+    print Task.query(sequence='pl')

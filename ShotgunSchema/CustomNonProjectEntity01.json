@@ -1,0 +1,67 @@
+{
+  "sg_start_date": {
+    "field_label": "Start Date",
+    "field_type": "str",
+    "editable": true
+  },
+  "sg_title": {
+    "field_label": "Title",
+    "field_type": "str",
+    "editable": true
+  },
+  "sg_cellphone": {
+    "field_label": "Cellphone",
+    "field_type": "str",
+    "editable": true
+  },
+  "sg_versions": {
+    "field_label": "Version <-> More Artist",
+    "field_type": "MultiProxyEntity",
+    "editable": true
+  },
+  "sg_chinese_name": {
+    "field_label": "Chinese Name",
+    "field_type": "str",
+    "editable": true
+  },
+  "sg_english_name": {
+    "field_label": "English Name",
+    "field_type": "str",
+    "editable": true
+  },
+  "code": {
+    "field_label": "Name",
+    "field_type": "str",
+    "editable": true
+  },
+  "sg_department": {
+    "field_label": "Department",
+    "field_type": "ProxyEntity",
+    "editable": true
+  },
+  "sg_status_list": {
+    "field_label": "Status",
+    "field_type": "str",
+    "editable": true
+  },
+  "sg_timelogs": {
+    "field_label": "TimeLog <-> More Persons",
+    "field_type": "MultiProxyEntity",
+    "editable": true
+  },
+  "description": {
+    "field_label": "Description",
+    "field_type": "str",
+    "editable": true
+  },
+  "sg_project_people": {
+    "field_label": "Project Person <-> Person",
+    "field_type": "MultiProxyEntity",
+    "editable": true
+  },
+  "sg_end_date": {
+    "field_label": "End Date",
+    "field_type": "str",
+    "editable": true
+  }
+}

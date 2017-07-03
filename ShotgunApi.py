@@ -9,7 +9,7 @@ import datetime
 import json
 import pkgutil
 from collections import defaultdict
-from ShotgunObj import my_sg
+from ShotgunObj import MyShotgun
 
 
 class MyNone(object):
@@ -26,19 +26,21 @@ class FieldBase(object):
     def __get__(self, instance, owner):
         if instance is None: return self
         value = instance._cache_data.get(self.field_code, MyNone)
-        if value is MyNone:
-            result = my_sg.find_one(instance.__class__.__name__, [['id', 'is', instance._id]],
-                                    instance._fields_.keys())
+        if (value is MyNone) and instance._id:
+            _fields = instance._fields_
+            sg_fields = [_fields[k].get('inner_code', k) for k in _fields.keys()]
+            my_sg = MyShotgun()
+            result = my_sg.find_one(instance._sg_table, [['id', 'is', instance._id]], sg_fields)
             if result is None:
-                raise Exception('Shotgun doesn\'t have this id[%d] %s!' % (instance._id, owner.__name__))
+                raise Exception('Shotgun doesn\'t have this id[%d] %s!' % (instance._id, owner._sg_table))
             instance._initData_(result)
-            value = result[self.field_code]
+            value = instance._cache_data.get(self.field_code, MyNone)
         return value
 
     def __set__(self, instance, value):
         if not self.editable:
             raise Exception(
-                'Entity "%s" This field "%s" is not editable!' % (instance.__class__.__name__, self.field_code))
+                'Entity "%s" This field "%s" is not editable!' % (instance._sg_table, self.field_code))
 
 
 class SGField(FieldBase):
@@ -52,9 +54,14 @@ class SGField(FieldBase):
 
 class ProxyEntity(FieldBase):
     def __get__(self, instance, owner):
-        value = super(ProxyEntity, self).__get__(instance, owner)
-        entity = globals()[value['type']].fromShotgunEntity(value)
-        return entity
+        dataDict = super(ProxyEntity, self).__get__(instance, owner)
+        # and dataDict.has_key('type') and dataDict.has_key('id')
+        # 有理由认为，这里从shotgun获取到的是包含了id 和 type 的字典， 要不然就是None
+        if isinstance(dataDict, self.field_type):
+            entity = SGEntityBase.fromShotgunEntity(dataDict)
+            return entity
+        else:
+            return None
 
     def __set__(self, instance, value):
         super(ProxyEntity, self).__set__(instance, value)
@@ -69,8 +76,11 @@ class ProxyEntity(FieldBase):
 class MultiProxyEntity(FieldBase):
     def __get__(self, instance, owner):
         valueList = super(MultiProxyEntity, self).__get__(instance, owner)
-        entities = [globals()[value['type']].fromShotgunEntity(value) for value in valueList]
-        return entities
+        if isinstance(valueList, self.field_type) and valueList:
+            entities = [SGEntityBase.fromShotgunEntity(value) for value in valueList]
+            return entities
+        else:
+            return []
 
     def __set__(self, instance, value):
         super(MultiProxyEntity, self).__set__(instance, value)
@@ -86,7 +96,7 @@ class SGMetaClass(type):
     def __new__(cls, name, bases, clsdict):
         data = pkgutil.get_data('ShotgunSchema', '{}.json'.format(name))
         fields = json.loads(data)
-        clsdict.update({'_fields_': fields})
+        clsdict.update({'_fields_': fields, '_sg_table': name, '_display_name': name})
         for field_code, field_dict in fields.items():
             field_label = field_dict['field_label']
             field_type = field_dict['field_type']
@@ -103,18 +113,19 @@ class SGMetaClass(type):
 class SGEntityBase(object):
     _repr_field = 'name'
 
-    def __init__(self, key):
+    def __init__(self, key=None):
         self._id = key
         self._cache_data = defaultdict(MyNone)
 
     def _initData_(self, dataDict):
-        for k, v in dataDict.items():
-            if k in self._fields_.keys():
-                self._cache_data[k] = v
+        for k, v in self._fields_.items():
+            attr = v['inner_code'] if v.has_key('inner_code') else k
+            if attr in dataDict.keys():
+                self._cache_data[k] = dataDict[attr]
 
     def __repr__(self):
         return "%s{'id':%s, '%s':'%s'}" % (
-            self.__class__.__name__, self._id, self._repr_field, getattr(self, self._repr_field, MyNone))
+            self._display_name, self._id, self._repr_field, getattr(self, self._repr_field, MyNone))
 
     def toPyData(self):
         resultDict = self.toShotgunEntity()
@@ -127,7 +138,8 @@ class SGEntityBase(object):
             editable = self._fields_.get(k, {'editable': False}).get('editable', True)
             if editable:
                 resultDict[k] = v
-        return my_sg.update(self.__class__.__name__, self._id, resultDict)
+        my_sg = MyShotgun()
+        return my_sg.update(self._sg_table, self._id, resultDict)
 
     @classmethod
     def query(cls, *args, **kwargs):
@@ -140,14 +152,15 @@ class SGEntityBase(object):
         if kwargs:
             for k, v in kwargs.items():
                 if k not in cls._fields_.keys():
-                    print '{0} has no attribute {1}'.format(cls.__name__, k)
+                    raise '{0} has no attribute {1}'.format(cls._sg_table, k)
                 else:
                     filters.append([k, 'is', v if not isinstance(v, SGEntityBase) else v.toShotgunEntity()])
         elif len(args) == 1:
             filters.append([cls._repr_field, 'is', args[0]])
         else:
             raise Exception('one arg, or key=word style!')
-        result = my_sg.find(cls.__name__, filters, cls._fields_.keys())
+        my_sg = MyShotgun()
+        result = my_sg.find(cls._sg_table, filters, cls._fields_.keys())
         return result
 
     @classmethod
@@ -157,7 +170,7 @@ class SGEntityBase(object):
 
     @classmethod
     def shotgunEntity(cls, _id):
-        return {'id': _id, 'type': cls.__name__}
+        return {'id': _id, 'type': cls._sg_table}
 
     def toShotgunEntity(self):
         return self.__class__.shotgunEntity(self._id)
@@ -165,16 +178,16 @@ class SGEntityBase(object):
     @classmethod
     def fromShotgunEntity(cls, dataDict):
         className = dataDict['type']
-        if cls.__name__ != className:
-            raise Exception('shotgun type <%s> you give doesn\'t match class <%s>' % (className, cls.__name__))
-        else:
-            entity = cls(dataDict['id'])
-            entity._initData_(dataDict)
-            return entity
+        if not globals().has_key(className):
+            raise Exception('shotgun type <%s> you give doesn\'t match class <%s>' % (className, cls._sg_table))
+        entity = globals()[className](dataDict['id'])
+        entity._initData_(dataDict)
+        return entity
 
     @classmethod
     def getShotgunSchema(cls, clean=True):
-        fields = my_sg.schema_field_read(cls.__name__)
+        my_sg = MyShotgun()
+        fields = my_sg.schema_field_read(cls._sg_table)
         if clean:
             resultDict = {}
             for name in fields.keys():
@@ -240,13 +253,33 @@ class TimeLog(SGEntityBase):
     _repr_field = 'date'
 
 
+class CustomNonProjectEntity01(SGEntityBase):
+    __metaclass__ = SGMetaClass
+    _repr_field = 'code'
+
+
+CustomNonProjectEntity01._display_name = 'MyPerson'
+MyPerson = CustomNonProjectEntity01
+
+
+class CustomEntity02(SGEntityBase):
+    __metaclass__ = SGMetaClass
+    _repr_field = 'name'
+
+
+CustomEntity02._display_name = 'ProjectPerson'
+ProjectPerson = CustomEntity02
+
 if __name__ == '__main__':
-    user = HumanUser.fromString('postgres')
-    print user.email
-    # for timelog in TimeLog.query(user=user):
-    #     print timelog
-        # print user.commit()
-    for t in Task.query_dict(task_assignees=user):
-        print t
-        # for p in Status.query():
-        #     print p
+    # user = HumanUser.fromString('postgres')
+    # Task.query_dict(task_assignees=user)
+    # task = Task(24779)
+    # print task.task_assignees
+    # t = Task()
+    # t.content = 'test'
+    # print t
+    i = MyPerson.fromString('muyanru')
+    # p = Project.fromString()
+    # ProjectPerson.query(name='muyanru', project=)
+    print i.sg_project_people
+    print i._display_name

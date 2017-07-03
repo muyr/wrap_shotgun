@@ -11,7 +11,21 @@ import sys
 import os
 
 
+class Singleton(type):
+    def __init__(self, *args, **kwargs):
+        super(Singleton, self).__init__(*args, **kwargs)
+        self.__instance = None
+
+    def __call__(self, *args, **kwargs):
+        if self.__instance is None:
+            self.__instance = super(Singleton, self).__call__(*args, **kwargs)
+            return self.__instance
+        else:
+            return self.__instance
+
+
 class ShotgunObj(Shotgun):
+    __metaclass__ = Singleton
     def __init__(self, base_url, script_name, api_key):
         super(ShotgunObj, self).__init__(base_url,
                                          script_name=script_name,
@@ -34,7 +48,7 @@ class ShotgunObj(Shotgun):
 
 class MyShotgun(ShotgunObj):
     _config = ConfigParser.SafeConfigParser()
-    _config.read(os.path.realpath(sys.path[0]) + '/sg.conf')
+    _config.read(os.path.realpath(sys.path[0]) + '/_sg.conf')
     url = _config.get('shotgun', 'url')
     script = _config.get('shotgun', 'script')
     key = _config.get('shotgun', 'key')
@@ -42,5 +56,3 @@ class MyShotgun(ShotgunObj):
     def __init__(self):
         super(MyShotgun, self).__init__(self.url, self.script, self.key)
 
-
-my_sg = MyShotgun()

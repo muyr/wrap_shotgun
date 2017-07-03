@@ -48,7 +48,7 @@ class ShotgunObj(Shotgun):
 
 class MyShotgun(ShotgunObj):
     _config = ConfigParser.SafeConfigParser()
-    _config.read(os.path.realpath(sys.path[0]) + '/_sg.conf')
+    _config.read(os.path.realpath(sys.path[0]) + '/sg.conf')
     url = _config.get('shotgun', 'url')
     script = _config.get('shotgun', 'script')
     key = _config.get('shotgun', 'key')

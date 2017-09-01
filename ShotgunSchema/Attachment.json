@@ -1,0 +1,113 @@
+{
+  "tasks": {
+    "field_label": "Tasks",
+    "field_type": "MultiProxyEntity",
+    "editable": true
+  },
+  "image": {
+    "field_label": "Thumbnail",
+    "field_type": "str",
+    "editable": true
+  },
+  "attachment_reference_links": {
+    "field_label": "Reference For",
+    "field_type": "MultiProxyEntity",
+    "editable": true
+  },
+  "file_size": {
+    "field_label": "File Size",
+    "field_type": "int",
+    "editable": false
+  },
+  "description": {
+    "field_label": "Description",
+    "field_type": "str",
+    "editable": true
+  },
+  "display_name": {
+    "field_label": "File Display Name",
+    "field_type": "str",
+    "editable": true
+  },
+  "created_by": {
+    "field_label": "Created by",
+    "field_type": "ProxyEntity",
+    "editable": false
+  },
+  "filename": {
+    "field_label": "File Name",
+    "field_type": "str",
+    "editable": false
+  },
+  "name": {
+    "field_label": "File Name",
+    "field_type": "str",
+    "editable": false,
+    "inner_code": "filename"
+  },
+  "sg_status_list": {
+    "field_label": "Status",
+    "field_type": "str",
+    "editable": true
+  },
+  "notes": {
+    "field_label": "Notes",
+    "field_type": "MultiProxyEntity",
+    "editable": true
+  },
+  "attachment_links": {
+    "field_label": "Links",
+    "field_type": "MultiProxyEntity",
+    "editable": true
+  },
+  "metadata": {
+    "field_label": "Metadata",
+    "field_type": "str",
+    "editable": true
+  },
+  "updated_by": {
+    "field_label": "Updated by",
+    "field_type": "ProxyEntity",
+    "editable": false
+  },
+  "local_storage": {
+    "field_label": "Local File Storage",
+    "field_type": "ProxyEntity",
+    "editable": false
+  },
+  "file_extension": {
+    "field_label": "File Type",
+    "field_type": "str",
+    "editable": false
+  },
+  "created_at": {
+    "field_label": "Date Created",
+    "field_type": "datetime.datetime",
+    "editable": false
+  },
+  "project": {
+    "field_label": "Project",
+    "field_type": "ProxyEntity",
+    "editable": true
+  },
+  "this_file": {
+    "field_label": "File",
+    "field_type": "FileField",
+    "editable": false
+  },
+  "sg_type": {
+    "field_label": "Type",
+    "field_type": "str",
+    "editable": true
+  },
+  "tag_list": {
+    "field_label": "Tags",
+    "field_type": "str",
+    "editable": true
+  },
+  "original_fname": {
+    "field_label": "Original Filename",
+    "field_type": "str",
+    "editable": true
+  }
+}

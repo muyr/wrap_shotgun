@@ -50,7 +50,7 @@ class ShotgunObj(Shotgun):
 
 class MyShotgun(ShotgunObj):
     import pkgutil, json
-    data = pkgutil.get_data('wrap_shot', 'SG_CONFIG.json')
+    data = pkgutil.get_data('wrap_shotgun', 'SG_CONFIG.json')
     settingDict = json.loads(data)
     url = settingDict.get('shotgun').get('url')
     script = settingDict.get('shotgun').get('script')

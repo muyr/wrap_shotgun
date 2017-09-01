@@ -3,16 +3,20 @@
     "field_label": "Department Short Name",
     "field_type": "str"
   },
- "color": {
-   "field_label": "Color",
-   "field_type": "str"
- },
- "name": {
-   "field_label": "Department Name",
-   "field_type": "str"
- },
- "users": {
-   "field_label": "People",
-   "field_type": "MultiProxyEntity"
- }
+  "color": {
+    "field_label": "Color",
+    "field_type": "str"
+  },
+  "name": {
+    "field_label": "Department Name",
+    "field_type": "str"
+  },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
+  },
+  "users": {
+    "field_label": "People",
+    "field_type": "MultiProxyEntity"
+  }
 }

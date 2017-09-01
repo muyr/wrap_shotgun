@@ -29,6 +29,16 @@
     "field_label": "Task Name",
     "create_need": true
   },
+  "name": {
+    "field_type": "str",
+    "field_label": "Task Name",
+    "create_need": true,
+    "inner_code": "content"
+  },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
+  },
   "sg_status_list": {
     "field_type": "str",
     "field_label": "Status"

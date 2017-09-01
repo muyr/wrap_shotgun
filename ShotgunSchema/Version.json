@@ -1,85 +1,94 @@
 {
-  "code":{
+  "code": {
     "field_type": "str",
     "field_label": "Version Name"
   },
-  "sg_task":{
+  "name": {
+    "field_type": "str",
+    "field_label": "Version Name",
+    "inner_code": "code"
+  },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
+  },
+  "sg_task": {
     "field_type": "ProxyEntity",
     "field_label": "Task"
   },
-  "updated_at":{
+  "updated_at": {
     "field_type": "datetime.datetime",
     "field_label": "Date Updated",
     "editable": false
   },
-  "entity":{
+  "entity": {
     "field_type": "ProxyEntity",
     "field_label": "Link"
   },
-  "sg_path_to_frames":{
-    "field_type": "str" ,
+  "sg_path_to_frames": {
+    "field_type": "str",
     "field_label": "Path to Frames"
   },
-  "cuts":{
+  "cuts": {
     "field_type": "MultiProxyEntity",
     "field_label": "Cuts"
   },
-  "description":{
+  "description": {
     "field_type": "str",
     "field_label": "Description"
   },
-  "sg_path_to_movie":{
+  "sg_path_to_movie": {
     "field_type": "str",
     "field_label": "Path to Movie"
   },
-  "created_by":{
-    "field_type": "ProxyEntity" ,
+  "created_by": {
+    "field_type": "ProxyEntity",
     "field_label": "Created by",
     "editable": false
   },
-  "sg_link_to_movie":{
-    "field_type": "dict" ,
+  "sg_link_to_movie": {
+    "field_type": "dict",
     "field_label": "Link to Movie"
   },
-  "sg_link_to_frames":{
+  "sg_link_to_frames": {
     "field_type": "dict",
     "field_label": "Link to Frames"
   },
-  "frame_count":{
-    "field_type": "int" ,
+  "frame_count": {
+    "field_type": "int",
     "field_label": "Frame Count"
   },
-  "sg_first_frame":{
+  "sg_first_frame": {
     "field_type": "int",
     "field_label": "First Frame"
   },
-  "sg_last_frame":{
+  "sg_last_frame": {
     "field_type": "int",
     "field_label": "Last Frame"
   },
-  "sg_uploaded_movie":{
-    "field_type": "dict",
+  "sg_uploaded_movie": {
+    "field_type": "FileField",
     "field_label": "Uploaded Movie"
   },
-  "user":{
+  "user": {
     "field_type": "ProxyEntity",
     "field_label": "Artist"
   },
-  "updated_by":{
+  "updated_by": {
     "field_type": "ProxyEntity",
-    "field_label":  "Updated by",
+    "field_label": "Updated by",
     "editable": false
   },
-  "notes":{
+  "notes": {
     "field_type": "MultiProxyEntity",
-    "field_label":  "Notes"
+    "field_label": "Notes"
   },
-  "project":{
+  "project": {
     "field_type": "ProxyEntity",
-    "field_label":  "Project"
+    "field_label": "Project"
   },
-  "created_at":{
-    "field_type": "datetime.datetime" ,
+  "created_at": {
+    "field_type": "datetime.datetime",
     "field_label": "Date Created",
     "editable": false
   }

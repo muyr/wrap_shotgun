@@ -1,26 +1,59 @@
 {
-  "code" : {
+  "code": {
     "field_type": "str",
     "field_label": "Shot Code"
   },
-  "project" : {
+  "name": {
+    "field_type": "str",
+    "field_label": "Shot Code",
+    "inner_code": "code"
+  },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
+  },
+  "project": {
     "field_type": "ProxyEntity",
     "field_label": "Project"
   },
-  "sg_sequence" : {
+  "sg_sequence": {
     "field_type": "ProxyEntity",
     "field_label": "Sequence"
   },
-  "tasks" : {
+  "tasks": {
     "field_type": "MultiProxyEntity",
     "field_label": "Tasks"
   },
-  "assets" : {
+  "assets": {
     "field_type": "MultiProxyEntity",
     "field_label": "Assets"
   },
-  "sg_status_list" : {
+  "sg_status_list": {
     "field_type": "str",
     "field_label": "Status"
+  },
+  "sg_reference_2": {
+    "field_label": "Reference",
+    "field_type": "FileField"
+  },
+  "sg_cut_in": {
+    "field_label": "Cut In",
+    "field_type": "int"
+  },
+  "sg_cut_out": {
+    "field_label": "Cut Out",
+    "field_type": "int"
+  },
+  "sg_distort": {
+    "field_label": "Distort",
+    "field_type": "bool"
+  },
+  "sg_resolution": {
+    "field_label": "Resolution",
+    "field_type": "str"
+  },
+  "description": {
+    "field_label": "Description",
+    "field_type": "str"
   }
 }

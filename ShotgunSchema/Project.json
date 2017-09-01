@@ -5,51 +5,54 @@
   },
   "created_at": {
     "field_label": "Date Created",
-    "field_type":  "datetime.datetime"
+    "field_type": "datetime.datetime"
   },
   "duration": {
     "field_label": "Duration",
-    "field_type":  "int"
+    "field_type": "int"
   },
   "end_date": {
     "field_label": "End Date",
-    "field_type":  "str"
+    "field_type": "str"
   },
   "name": {
     "field_label": "Project Name",
-    "field_type":  "str"
+    "field_type": "str"
+  },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
   },
   "sg_description": {
     "field_label": "Description",
-    "field_type":  "str"
+    "field_type": "str"
   },
   "sg_due": {
     "field_label": "Due",
-    "field_type":  "str"
+    "field_type": "str"
   },
   "sg_resolution": {
     "field_label": "resolution",
-    "field_type":  "str"
+    "field_type": "str"
   },
   "sg_start": {
     "field_label": "Start",
-    "field_type":  "str"
+    "field_type": "str"
   },
   "sg_status": {
     "field_label": "Status",
-    "field_type":  "str"
+    "field_type": "str"
   },
   "sg_stereo_type": {
     "field_label": "Stereo Type",
-    "field_type":  "str"
+    "field_type": "str"
   },
   "start_date": {
     "field_label": "Start Date",
-    "field_type":  "str"
+    "field_type": "str"
   },
   "users": {
     "field_label": "Users",
     "field_type": "MultiProxyEntity"
   }
-
 }

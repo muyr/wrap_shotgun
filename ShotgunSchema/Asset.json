@@ -3,6 +3,15 @@
     "field_label": "Asset Name",
     "field_type": "str"
   },
+  "name": {
+    "field_label": "Asset Name",
+    "field_type": "str",
+    "inner_code": "code"
+  },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
+  },
   "tasks": {
     "field_label": "Tasks",
     "field_type": "MultiProxyEntity"
@@ -38,5 +47,9 @@
   "shots": {
     "field_label": "Shots",
     "field_type": "MultiProxyEntity"
+  },
+  "sg_reference_2": {
+    "field_label": "Reference",
+    "field_type": "FileField"
   }
 }

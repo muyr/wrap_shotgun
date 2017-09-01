@@ -3,12 +3,21 @@
     "field_type": "str",
     "field_label": "Sequence Name"
   },
+  "name": {
+    "field_type": "str",
+    "field_label": "Sequence Name",
+    "inner_code": "code"
+  },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
+  },
   "tasks": {
     "field_type": "MultiProxyEntity",
     "field_label": "Tasks"
   },
-  "cuts" : {
-    "field_type":"MultiProxyEntity",
+  "cuts": {
+    "field_type": "MultiProxyEntity",
     "field_label": "Cuts"
   },
   "sg_due_1": {
@@ -16,22 +25,22 @@
     "field_label": "Due"
   },
   "sg_status_list": {
-    "field_type":"str",
+    "field_type": "str",
     "field_label": "Status"
   },
-  "assets":{
-    "field_type":"MultiProxyEntity",
+  "assets": {
+    "field_type": "MultiProxyEntity",
     "field_label": "Assets"
   },
-  "project":{
+  "project": {
     "field_type": "ProxyEntity",
     "field_label": "Project"
   },
-  "sg_assigned_to":{
-     "field_type": "ProxyEntity",
+  "sg_assigned_to": {
+    "field_type": "ProxyEntity",
     "field_label": "Assigned To"
   },
-  "shots":{
+  "shots": {
     "field_type": "MultiProxyEntity",
     "field_label": "Shots"
   }

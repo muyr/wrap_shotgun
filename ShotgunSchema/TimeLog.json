@@ -42,5 +42,18 @@
     "field_type": "ProxyEntity",
     "field_label": "Updated by",
     "editable": false
+  },
+  "shot_asset": {
+    "field_label": "Shot/Asset",
+    "field_type": "ProxyEntity",
+    "inner_code": "entity.Task.entity"
+  },
+  "sg_ot": {
+    "field_label": "Overtime",
+    "field_type": "int"
+  },
+  "sg_overtime_approval": {
+    "field_label": "Overtime Approval",
+    "field_type": "bool"
   }
 }

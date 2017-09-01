@@ -24,6 +24,10 @@
     "field_type": "str",
     "editable": false
   },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
+  },
   "projects": {
     "field_label": "Projects",
     "field_type": "MultiProxyEntity"

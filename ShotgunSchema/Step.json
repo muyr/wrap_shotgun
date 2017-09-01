@@ -3,6 +3,11 @@
     "field_label": "Pipeline Step",
     "field_type": "str"
   },
+  "name": {
+    "field_label": "Pipeline Step",
+    "field_type": "str",
+    "inner_code": "code"
+  },
   "short_name": {
     "field_label": "Short Code",
     "field_type": "str"

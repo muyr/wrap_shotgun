@@ -5,11 +5,12 @@
 # Email : muyanru345@163.com
 ###################################################################
 
-import datetime
+import datetime as dt
 import json
 import pkgutil
 from collections import defaultdict
 from ShotgunObj import MyShotgun
+import __builtin__
 
 
 class MyNone(object):
@@ -146,14 +147,17 @@ class SGMetaClass(type):
             field_label = field_dict['field_label']
             field_type = field_dict['field_type']
             editable = field_dict.get('editable', True)
-            if field_type == 'ProxyEntity':
+            if field_type == 'entity':
                 clsdict.update({field_code: ProxyEntity(field_code, field_label, dict, editable)})
-            elif field_type == 'MultiProxyEntity':
+            elif field_type == 'multi_entity':
                 clsdict.update({field_code: MultiProxyEntity(field_code, field_label, list, editable)})
-            elif field_type == 'FileField':
+            elif field_type == 'url':
                 clsdict.update({field_code: FileField(field_code, field_label, dict, editable)})
+            elif field_type == 'date_time':
+                clsdict.update({field_code: SGField(field_code, field_label, dt.datetime, editable)})
             else:
-                clsdict.update({field_code: SGField(field_code, field_label, eval(field_type), editable)})
+                clsdict.update(
+                    {field_code: SGField(field_code, field_label, getattr(__builtin__, field_type), editable)})
         return super(SGMetaClass, cls).__new__(cls, name, bases, clsdict)
 
 
@@ -209,7 +213,7 @@ class SGEntityBase(object):
                     raise '{0} has no attribute {1}'.format(cls._sg_table, k)
                 else:
                     key = cls._fields_[k].get('inner_code', k)
-                    if isinstance(v, list):
+                    if isinstance(v, list) and v:
                         values = [i if not isinstance(i, SGEntityBase) else i.toShotgunEntity() for i in v]
                         filters.append([key, 'in', values])
                     else:

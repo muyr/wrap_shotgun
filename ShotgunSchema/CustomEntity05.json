@@ -13,11 +13,11 @@
     "field_label": "Thumbnail"
   },
   "project": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Project"
   },
   "tasks": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Tasks"
   },
   "sg_status_list": {

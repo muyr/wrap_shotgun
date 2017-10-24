@@ -14,15 +14,15 @@
   },
   "tasks": {
     "field_label": "Tasks",
-    "field_type": "MultiProxyEntity"
+    "field_type": "multi_entity"
   },
   "sequences": {
     "field_label": "Sequences",
-    "field_type": "MultiProxyEntity"
+    "field_type": "multi_entity"
   },
   "parents": {
     "field_label": "Parent Assets",
-    "field_type": "MultiProxyEntity"
+    "field_type": "multi_entity"
   },
   "sg_status_list": {
     "field_type": "str",
@@ -38,18 +38,18 @@
   },
   "assets": {
     "field_label": "Sub Assets",
-    "field_type": "MultiProxyEntity"
+    "field_type": "multi_entity"
   },
   "project": {
     "field_label": "Project",
-    "field_type": "ProxyEntity"
+    "field_type": "entity"
   },
   "shots": {
     "field_label": "Shots",
-    "field_type": "MultiProxyEntity"
+    "field_type": "multi_entity"
   },
   "sg_reference_2": {
     "field_label": "Reference",
-    "field_type": "FileField"
+    "field_type": "url"
   }
 }

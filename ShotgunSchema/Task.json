@@ -4,12 +4,12 @@
     "field_label": "Gantt Bar Color"
   },
   "entity": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Link",
     "create_need": true
   },
   "task_assignees": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Assigned To"
   },
   "duration": {
@@ -17,11 +17,11 @@
     "field_label": "Duration"
   },
   "downstream_tasks": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Downstream Dependency"
   },
   "upstream_tasks": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Upstream Dependency"
   },
   "content": {
@@ -52,7 +52,7 @@
     "field_label": "Start"
   },
   "sibling_tasks": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Sibling Tasks"
   },
   "due_date": {
@@ -60,7 +60,7 @@
     "field_label": "End"
   },
   "step": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Pipeline Step",
     "create_need": true
   },
@@ -69,7 +69,7 @@
     "field_label": "Time Logged - % of Bid"
   },
   "project": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Project",
     "create_need": true
   },
@@ -87,16 +87,20 @@
   },
   "sequence": {
     "field_label": "Sequence",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "inner_code": "entity.Shot.sg_sequence"
   },
   "sg_asset_type": {
     "field_label": "Asset Type",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "inner_code": "entity.Asset.sg_asset_type"
   },
   "sg_more_project_person_assigned": {
     "field_label": "Asset Type",
-    "field_type": "ProxyEntity"
+    "field_type": "entity"
+  },
+  "sg_plan_day": {
+    "field_label": "Plan Day",
+    "field_type": "float"
   }
 }

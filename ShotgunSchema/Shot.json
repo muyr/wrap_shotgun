@@ -13,19 +13,19 @@
     "field_label": "Thumbnail"
   },
   "project": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Project"
   },
   "sg_sequence": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Sequence"
   },
   "tasks": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Tasks"
   },
   "assets": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Assets"
   },
   "sg_status_list": {
@@ -34,7 +34,7 @@
   },
   "sg_reference_2": {
     "field_label": "Reference",
-    "field_type": "FileField"
+    "field_type": "url"
   },
   "sg_cut_in": {
     "field_label": "Cut In",
@@ -54,6 +54,37 @@
   },
   "description": {
     "field_label": "Description",
+    "field_type": "str"
+  },
+  "sg_before_cut": {
+    "field_label": "Before Cut",
+    "field_type": "str"
+  },
+  "reel": {
+    "field_label": "Reel",
+    "field_type": "entity"
+  },
+  "reel_camera_model": {
+    "field_label": "Reel Camera Model",
+    "field_type": "str",
+    "inner_code": "reel.Reel.sg_camera_model"
+  },
+  "reel_lens_model": {
+    "field_label": "Reel Lens Model",
+    "field_type": "str",
+    "inner_code": "reel.Reel.sg_lens_model"
+  },
+  "reel_focal_length": {
+    "field_label": "Reel Focal Length",
+    "field_type": "float",
+    "inner_code": "reel.Reel.sg_focal_length"
+  },
+  "sg_frame_modified": {
+    "field_label": "Frame Modified",
+    "field_type": "str"
+  },
+  "sg_cut_infomation": {
+    "field_label": "Cut Information",
     "field_type": "str"
   }
 }

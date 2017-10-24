@@ -13,11 +13,11 @@
     "field_label": "Thumbnail"
   },
   "tasks": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Tasks"
   },
   "cuts": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Cuts"
   },
   "sg_due_1": {
@@ -29,19 +29,19 @@
     "field_label": "Status"
   },
   "assets": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Assets"
   },
   "project": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Project"
   },
   "sg_assigned_to": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Assigned To"
   },
   "shots": {
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "field_label": "Shots"
   }
 }

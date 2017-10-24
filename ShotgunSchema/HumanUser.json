@@ -1,7 +1,7 @@
 {
   "department": {
     "field_label": "Department",
-    "field_type": "ProxyEntity"
+    "field_type": "entity"
   },
   "email": {
     "field_label": "Email",
@@ -30,7 +30,7 @@
   },
   "projects": {
     "field_label": "Projects",
-    "field_type": "MultiProxyEntity"
+    "field_type": "multi_entity"
   },
   "sg_status_list": {
     "field_label": "Status",

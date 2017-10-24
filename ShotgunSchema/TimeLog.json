@@ -4,26 +4,26 @@
     "field_label": "Description"
   },
   "created_at": {
-    "field_type": "datetime.datetime",
+    "field_type": "date_time",
     "field_label": "Date Created",
     "editable": false
   },
   "updated_at": {
-    "field_type": "datetime.datetime",
+    "field_type": "date_time",
     "field_label": "Date Updated",
     "editable": false
   },
   "created_by": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Created by",
     "editable": false
   },
   "entity": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Link"
   },
   "project": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Project"
   },
   "duration": {
@@ -31,7 +31,7 @@
     "field_label": "Duration"
   },
   "user": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Person"
   },
   "date": {
@@ -39,13 +39,13 @@
     "field_label": "Date"
   },
   "updated_by": {
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "field_label": "Updated by",
     "editable": false
   },
   "shot_asset": {
     "field_label": "Shot/Asset",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "inner_code": "entity.Task.entity"
   },
   "sg_ot": {

@@ -16,7 +16,7 @@
   },
   "sg_versions": {
     "field_label": "Version <-> More Artist",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "sg_chinese_name": {
@@ -36,7 +36,7 @@
   },
   "sg_department": {
     "field_label": "Department",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": true
   },
   "sg_status_list": {
@@ -46,7 +46,7 @@
   },
   "sg_timelogs": {
     "field_label": "TimeLog <-> More Persons",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "description": {
@@ -56,7 +56,7 @@
   },
   "sg_project_people": {
     "field_label": "Project Person <-> Person",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "sg_end_date": {

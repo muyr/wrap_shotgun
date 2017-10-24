@@ -17,6 +17,6 @@
   },
   "users": {
     "field_label": "People",
-    "field_type": "MultiProxyEntity"
+    "field_type": "multi_entity"
   }
 }

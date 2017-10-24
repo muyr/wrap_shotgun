@@ -5,7 +5,7 @@
   },
   "created_at": {
     "field_label": "Date Created",
-    "field_type": "datetime.datetime"
+    "field_type": "date_time"
   },
   "duration": {
     "field_label": "Duration",
@@ -53,6 +53,10 @@
   },
   "users": {
     "field_label": "Users",
-    "field_type": "MultiProxyEntity"
+    "field_type": "multi_entity"
+  },
+  "sg_pipeline_version": {
+    "field_label": "Pipeline Version",
+    "field_type": "str"
   }
 }

@@ -1,11 +1,11 @@
 {
   "sg_task": {
     "field_label": "Task",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "code": {
-    "field_label": "Other Works Name",
+    "field_label": "Element Name",
     "field_type": "str",
     "editable": true
   },
@@ -16,7 +16,15 @@
   },
   "project": {
     "field_label": "Project",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": true
+  },
+  "sg_user": {
+    "field_label": "Artist",
+    "field_type": "entity"
+  },
+  "sg_publish_workfile": {
+    "field_label": "Publish Workfile",
+    "field_type": "int"
   }
 }

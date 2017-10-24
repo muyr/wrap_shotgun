@@ -1,17 +1,17 @@
 {
   "tasks": {
     "field_label": "Tasks",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "attachments": {
     "field_label": "Attachments",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "replies": {
     "field_label": "Replies",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "subject": {
@@ -27,12 +27,12 @@
   },
   "addressings_to": {
     "field_label": "To",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "created_by": {
     "field_label": "Created by",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": false
   },
   "content": {
@@ -47,37 +47,37 @@
   },
   "addressings_cc": {
     "field_label": "Cc",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "user": {
     "field_label": "Author",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": true
   },
   "sg_to_whom_1": {
     "field_label": "To Whom",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "sg_shot": {
     "field_label": "Shot",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": true
   },
   "note_links": {
     "field_label": "Links",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "created_at": {
     "field_label": "Date Created",
-    "field_type": "datetime.datetime",
+    "field_type": "date_time",
     "editable": false
   },
   "project": {
     "field_label": "Project",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": true
   }
 }

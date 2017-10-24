@@ -1,7 +1,7 @@
 {
   "sg_task": {
     "field_label": "Task",
-    "field_type": "MultiProxyEntity",
+    "field_type": "multi_entity",
     "editable": true
   },
   "code": {
@@ -16,7 +16,11 @@
   },
   "project": {
     "field_label": "Project",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": true
+  },
+  "sg_user": {
+    "field_label": "Artist",
+    "field_type": "entity"
   }
 }

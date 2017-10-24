@@ -22,17 +22,17 @@
   },
   "created_at": {
     "field_label": "Date Created",
-    "field_type": "datetime.datetime",
+    "field_type": "date_time",
     "editable": false
   },
   "updated_at": {
     "field_label": "Date Updated",
-    "field_type": "datetime.datetime",
+    "field_type": "date_time",
     "editable": false
   },
   "created_by": {
     "field_label": "Created by",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": false
   },
   "windows_path": {
@@ -42,7 +42,7 @@
   },
   "updated_by": {
     "field_label": "Updated by",
-    "field_type": "ProxyEntity",
+    "field_type": "entity",
     "editable": false
   },
   "linux_path": {

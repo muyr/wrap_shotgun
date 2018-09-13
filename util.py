@@ -5,7 +5,7 @@
 # Date  : 2018.2
 # Email : muyanru345@163.com
 ###################################################################
-__all__ = ['get_shotgun_schema']
+__all__ = ['get_shotgun_schema', 'get_shotgun_entity']
 
 from ShotgunObj import MyShotgun
 

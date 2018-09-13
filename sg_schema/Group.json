@@ -1,0 +1,17 @@
+{
+  "Group": {
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "code": {
+      "field_label": "Group Name",
+      "field_type": "text"
+    },
+    "users": {
+      "field_label": "Users",
+      "field_type": "multi_entity"
+    }
+  }
+}

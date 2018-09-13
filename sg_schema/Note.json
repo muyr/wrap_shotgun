@@ -1,0 +1,92 @@
+{
+  "Note": {
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "tasks": {
+      "field_label": "Tasks",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "attachments": {
+      "field_label": "Attachments",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "replies": {
+      "field_label": "Replies",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "subject": {
+      "field_label": "Subject",
+      "field_type": "text",
+      "editable": true
+    },
+    "name": {
+      "field_label": "Subject",
+      "field_type": "text",
+      "editable": true,
+      "innder_code": "subject"
+    },
+    "addressings_to": {
+      "field_label": "To",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "created_by": {
+      "field_label": "Created by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "content": {
+      "field_label": "Body",
+      "field_type": "text",
+      "editable": true
+    },
+    "reply_content": {
+      "field_label": "Reply Content",
+      "field_type": "text",
+      "editable": true
+    },
+    "addressings_cc": {
+      "field_label": "Cc",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "user": {
+      "field_label": "Author",
+      "field_type": "entity",
+      "editable": true
+    },
+    "sg_to_whom_1": {
+      "field_label": "To Whom",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "sg_shot": {
+      "field_label": "Shot",
+      "field_type": "entity",
+      "editable": true
+    },
+    "note_links": {
+      "field_label": "Links",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "created_at": {
+      "field_label": "Date Created",
+      "field_type": "date_time",
+      "editable": false
+    },
+    "project": {
+      "field_label": "Project",
+      "field_type": "entity",
+      "editable": true
+    }
+  }
+}
+
+

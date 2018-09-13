@@ -1,0 +1,65 @@
+{
+  "LocalStorage": {
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "code": {
+      "field_label": "Local Storage Name",
+      "field_type": "text",
+      "editable": true
+    },
+    "name": {
+      "field_label": "Local Storage Name",
+      "field_type": "text",
+      "editable": true,
+      "inner_code": "code"
+    },
+    "uuid": {
+      "field_label": "UUID",
+      "field_type": "text",
+      "editable": false
+    },
+    "mac_path": {
+      "field_label": "Mac Path",
+      "field_type": "text",
+      "editable": true
+    },
+    "created_at": {
+      "field_label": "Date Created",
+      "field_type": "date_time",
+      "editable": false
+    },
+    "updated_at": {
+      "field_label": "Date Updated",
+      "field_type": "date_time",
+      "editable": false
+    },
+    "created_by": {
+      "field_label": "Created by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "windows_path": {
+      "field_label": "Windows Path",
+      "field_type": "text",
+      "editable": true
+    },
+    "updated_by": {
+      "field_label": "Updated by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "linux_path": {
+      "field_label": "Linux Path",
+      "field_type": "text",
+      "editable": true
+    },
+    "description": {
+      "field_label": "Description",
+      "field_type": "text",
+      "editable": true
+    }
+  }
+}

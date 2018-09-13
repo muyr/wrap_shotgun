@@ -1,0 +1,514 @@
+{
+  "Shot": {
+    "code": {
+      "field_label": "Shot",
+      "field_type": "text",
+      "editable": true
+    },
+    "sg_published_files": {
+      "field_label": "Published File <-> Link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_double_link": {
+      "field_label": "double_link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "smart_cut_duration": {
+      "field_label": "Cut Duration",
+      "field_type": "number",
+      "editable": true
+    },
+    "open_notes": {
+      "field_label": "Open Notes",
+      "field_type": "multi_entity",
+      "editable": false,
+      "later":true
+    },
+    "tail_duration": {
+      "field_label": "Raw Tail Duration",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "sg_project_files": {
+      "field_label": "Project File <-> Link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_plt_versions": {
+      "field_label": "PLT Versions",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_version": {
+      "field_label": "version",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "parent_shots": {
+      "field_label": "Parent Shots",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "updated_by": {
+      "field_label": "Updated by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "smart_cut_out": {
+      "field_label": "Cut Out",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "tail_out": {
+      "field_label": "Raw Tail Out",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "sg_concepts": {
+      "field_label": "Concept <-> Link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_resolution": {
+      "field_label": "\u5206\u8fa8\u7387(Resolution)",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "smart_duration_summary_display": {
+      "field_label": "Duration Summary",
+      "field_type": "text",
+      "editable": false,
+      "later":true
+    },
+    "notes": {
+      "field_label": "Notes",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_head_in": {
+      "field_label": "Head In",
+      "field_type": "number",
+      "editable": true
+    },
+    "shots": {
+      "field_label": "Sub Shots",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_focal_point": {
+      "field_label": "Focal Point",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "step_14": {
+      "field_label": "Mattpainting",
+      "field_type": "pivot_column",
+      "editable": false,
+      "later":true
+    },
+    "step_16": {
+      "field_label": "Track",
+      "field_type": "pivot_column",
+      "editable": false,
+      "later":true
+    },
+    "sg_full_code": {
+      "field_label": "Full Code",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "smart_tail_in": {
+      "field_label": "Tail In",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "sg_reference_2": {
+      "field_label": "Shot Reference",
+      "field_type": "url",
+      "editable": true
+    },
+    "sg_cut_duration": {
+      "field_label": "Frames",
+      "field_type": "number",
+      "editable": true
+    },
+    "sg_sync_status": {
+      "field_label": "Sync Status",
+      "field_type": "status_list",
+      "editable": true,
+      "later":true
+    },
+    "sg_cut_infomation": {
+      "field_label": "Cut_Infomation",
+      "field_type": "text",
+      "editable": true
+    },
+    "tail_in": {
+      "field_label": "Raw Tail In",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "smart_working_duration": {
+      "field_label": "Working Duration",
+      "field_type": "number",
+      "editable": false,
+      "later":true
+    },
+    "sg_camera_movement": {
+      "field_label": "Camera Movement",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "addressings_cc": {
+      "field_label": "Cc",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_focal_length": {
+      "field_label": "Focal Length",
+      "field_type": "text",
+      "editable": true
+    },
+    "smart_tail_out": {
+      "field_label": "Tail Out",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "sg_cut_order": {
+      "field_label": "Cut Order",
+      "field_type": "number",
+      "editable": true
+    },
+    "tag_list": {
+      "field_label": "Tags",
+      "field_type": "tag_list",
+      "editable": true
+    },
+    "open_notes_count": {
+      "field_label": "Open Notes Count",
+      "field_type": "summary",
+      "editable": false,
+      "later":true
+    },
+    "tasks": {
+      "field_label": "Tasks",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_other_description": {
+      "field_label": "Other Description 1",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "sg_versions": {
+      "field_label": "Version <-> Link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "image": {
+      "field_label": "Thumbnail",
+      "field_type": "image",
+      "editable": true,
+      "later":true
+    },
+    "sg_before_cut": {
+      "field_label": "before_Cut",
+      "field_type": "text",
+      "editable": true
+    },
+    "created_by": {
+      "field_label": "Created by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "filmstrip_image": {
+      "field_label": "Filmstrip Thumbnail",
+      "field_type": "image",
+      "editable": true,
+      "later":true
+    },
+    "cached_display_name": {
+      "field_label": "Cached Display Name",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "sg_handle_in": {
+      "field_label": "Handle In",
+      "field_type": "number",
+      "editable": true
+    },
+    "sg_concept_file": {
+      "field_label": "Concept File",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "step_13": {
+      "field_label": "Layout",
+      "field_type": "pivot_column",
+      "editable": false,
+      "later":true
+    },
+    "sg_working_duration": {
+      "field_label": "Working Duration",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "smart_tail_duration": {
+      "field_label": "Tail Duration",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "sg_status_list": {
+      "field_label": "Status",
+      "field_type": "status_list",
+      "editable": true
+    },
+    "sg_fs_status": {
+      "field_label": "File System Status",
+      "field_type": "status_list",
+      "editable": true,
+      "later":true
+    },
+    "smart_head_in": {
+      "field_label": "Head In",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "sg_cut_in": {
+      "field_label": "Cut In",
+      "field_type": "number",
+      "editable": true
+    },
+    "sg_cut_out": {
+      "field_label": "Cut Out",
+      "field_type": "number",
+      "editable": true
+    },
+    "sg_tail_out": {
+      "field_label": "Tail Out",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "cut_in": {
+      "field_label": "Raw Cut In",
+      "field_type": "number",
+      "editable": true
+    },
+    "sg_distort": {
+      "field_label": "\u6709\u65e0\u7578\u53d8",
+      "field_type": "checkbox",
+      "editable": true
+    },
+    "sg_notes": {
+      "field_label": "Note <-> Shot",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "reel": {
+      "field_label": "Reel",
+      "field_type": "entity",
+      "editable": true
+    },
+    "sg_handle_out": {
+      "field_label": "Handle Out",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "project": {
+      "field_label": "Project",
+      "field_type": "entity",
+      "editable": true
+    },
+    "cut_out": {
+      "field_label": "Raw Cut Out",
+      "field_type": "number",
+      "editable": true
+    },
+    "sg_latest_note": {
+      "field_label": "Latest Note",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_sequence": {
+      "field_label": "Sequence",
+      "field_type": "entity",
+      "editable": true
+    },
+    "sg_frame_modified": {
+      "field_label": "Frame Modified",
+      "field_type": "list",
+      "editable": true
+    },
+    "head_duration": {
+      "field_label": "Raw Head Duration",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "updated_at": {
+      "field_label": "Date Updated",
+      "field_type": "date_time",
+      "editable": false
+    },
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "task_template": {
+      "field_label": "Task Template",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_distortion": {
+      "field_label": "Distortion",
+      "field_type": "text",
+      "editable": true
+    },
+    "sg_task_count": {
+      "field_label": "Task Count",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_shot_type": {
+      "field_label": "Type",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "description": {
+      "field_label": "Description",
+      "field_type": "text",
+      "editable": true
+    },
+    "sg_publish_count_1_0": {
+      "field_label": "Publish Count 1.0",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "smart_cut_in": {
+      "field_label": "Cut In",
+      "field_type": "number",
+      "editable": true
+    },
+    "smart_cut_summary_display": {
+      "field_label": "Cut Summary",
+      "field_type": "text",
+      "editable": false,
+      "later":true
+    },
+    "sg_timelog_sum": {
+      "field_label": "TimeLog Sum",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_other_description_2": {
+      "field_label": "Other Description 2",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "head_out": {
+      "field_label": "Raw Head Out",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "sg_lay_versions": {
+      "field_label": "lay versions",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "assets": {
+      "field_label": "Assets",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "smart_head_out": {
+      "field_label": "Head Out",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "created_at": {
+      "field_label": "Date Created",
+      "field_type": "date_time",
+      "editable": false
+    },
+    "head_in": {
+      "field_label": "Raw Head In",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "smart_head_duration": {
+      "field_label": "Head Duration",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "cut_duration": {
+      "field_label": "Raw Cut Duration",
+      "field_type": "number",
+      "editable": true
+    },
+    "reel_Reel_sg_camera_model": {
+      "field_label": "Reel Camera Model",
+      "field_type": "text",
+      "inner_code": "reel.Reel.sg_camera_model"
+    },
+    "reel_Reel_sg_lens_model": {
+      "field_label": "Reel Lens Model",
+      "field_type": "text",
+      "inner_code": "reel.Reel.sg_lens_model"
+    },
+    "reel_Reel_sg_focal_length": {
+      "field_label": "Reel Focal Length",
+      "field_type": "float",
+      "inner_code": "reel.Reel.sg_focal_length"
+    },
+    "sg_client_name":{
+      "field_label": "Client Name",
+      "field_type": "text",
+      "editable": true
+    }
+  }
+}

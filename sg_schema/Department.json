@@ -1,0 +1,29 @@
+{
+  "Department": {
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "code": {
+      "field_label": "Department Short Name",
+      "field_type": "text"
+    },
+    "color": {
+      "field_label": "Color",
+      "field_type": "text"
+    },
+    "name": {
+      "field_label": "Department Name",
+      "field_type": "text"
+    },
+    "image": {
+      "field_type": "text",
+      "field_label": "image"
+    },
+    "users": {
+      "field_label": "People",
+      "field_type": "multi_entity"
+    }
+  }
+}

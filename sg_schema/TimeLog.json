@@ -1,0 +1,112 @@
+{
+  "TimeLog": {
+    "sg_workday": {
+      "field_label": "workday",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "description": {
+      "field_label": "Description",
+      "field_type": "text",
+      "editable": true
+    },
+    "sg_translated_count": {
+      "field_label": "Translated Count",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "duration": {
+      "field_label": "Duration",
+      "field_type": "duration",
+      "editable": true
+    },
+    "created_at": {
+      "field_label": "Date Created",
+      "field_type": "date_time",
+      "editable": false
+    },
+    "updated_at": {
+      "field_label": "Date Updated",
+      "field_type": "date_time",
+      "editable": false
+    },
+    "created_by": {
+      "field_label": "Created by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "entity": {
+      "field_label": "Link",
+      "field_type": "entity",
+      "editable": true
+    },
+    "project": {
+      "field_label": "Project",
+      "field_type": "entity",
+      "editable": true
+    },
+    "sg_ot": {
+      "field_label": "Overtime",
+      "field_type": "duration",
+      "editable": true
+    },
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "sg_translated_timelogs": {
+      "field_label": "Translated Timelog <-> Raw Timelog",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "updated_by": {
+      "field_label": "Updated by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "date": {
+      "field_label": "Date",
+      "field_type": "date",
+      "editable": true
+    },
+    "sg_more_person": {
+      "field_label": "Project Person",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "cached_display_name": {
+      "field_label": "Cached Display Name",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "sg_work_hour": {
+      "field_label": "Work Hour",
+      "field_type": "duration",
+      "editable": true,
+      "later":true
+    },
+    "sg_overtime_approval": {
+      "field_label": "Overtime Approval",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "sg_timelogview_people_viewing": {
+      "field_label": "Timelogview_people_viewing",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "user": {
+      "field_label": "Person",
+      "field_type": "entity",
+      "editable": true
+    }
+  }
+}

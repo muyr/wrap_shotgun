@@ -1,0 +1,219 @@
+{
+  "Sequence": {
+    "sg_sequence_type": {
+      "field_label": "Type",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "open_notes_count": {
+      "field_label": "Open Notes Count",
+      "field_type": "summary",
+      "editable": false,
+      "later":true
+    },
+    "code": {
+      "field_label": "Sequence Name",
+      "field_type": "text",
+      "editable": true
+    },
+    "sg_versions": {
+      "field_label": "Version <-> Link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "image": {
+      "field_label": "Thumbnail",
+      "field_type": "image",
+      "editable": true,
+      "later":true
+    },
+    "updated_at": {
+      "field_label": "Date Updated",
+      "field_type": "date_time",
+      "editable": false,
+      "later":true
+    },
+    "tasks": {
+      "field_label": "Tasks",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "sg_shots": {
+      "field_label": "Shot <-> \u955c\u53f7(Sequence)",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "cuts": {
+      "field_label": "Cuts",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "cached_display_name": {
+      "field_label": "Cached Display Name",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "sg_sync_status": {
+      "field_label": "\u540c\u6b65\u5408\u6cd5",
+      "field_type": "status_list",
+      "editable": true,
+      "later":true
+    },
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "updated_by": {
+      "field_label": "Updated by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "open_notes": {
+      "field_label": "Open Notes",
+      "field_type": "multi_entity",
+      "editable": false,
+      "later":true
+    },
+    "task_template": {
+      "field_label": "Task Template",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "created_by": {
+      "field_label": "Created by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "sg_status_list": {
+      "field_label": "Status",
+      "field_type": "status_list",
+      "editable": true
+    },
+    "sg_shots_count": {
+      "field_label": "Shots Count",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "created_at": {
+      "field_label": "Date Created",
+      "field_type": "date_time",
+      "editable": false,
+      "later":true
+    },
+    "sg____epiboly_": {
+      "field_label": "\u5916\u5305(Epiboly)",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "description": {
+      "field_label": "Description",
+      "field_type": "text",
+      "editable": true
+    },
+    "addressings_cc": {
+      "field_label": "Cc",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_concepts": {
+      "field_label": "Concept <-> Link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_reference": {
+      "field_label": "Reference",
+      "field_type": "url",
+      "editable": true
+    },
+    "sg_due_1": {
+      "field_label": "Due",
+      "field_type": "date",
+      "editable": true,
+      "later":true
+    },
+    "step_0": {
+      "field_label": "ALL TASKS",
+      "field_type": "pivot_column",
+      "editable": false,
+      "later":true
+    },
+    "assets": {
+      "field_label": "Assets",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "notes": {
+      "field_label": "Notes",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_start": {
+      "field_label": "Start",
+      "field_type": "date",
+      "editable": true,
+      "later":true
+    },
+    "project": {
+      "field_label": "Project",
+      "field_type": "entity",
+      "editable": true
+    },
+    "filmstrip_image": {
+      "field_label": "Filmstrip Thumbnail",
+      "field_type": "image",
+      "editable": true,
+      "later":true
+    },
+    "step_138": {
+      "field_label": "Producer",
+      "field_type": "pivot_column",
+      "editable": false,
+      "later":true
+    },
+    "sg_assigned_to": {
+      "field_label": "Assigned To",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "shots": {
+      "field_label": "Shots",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "task_sg_cpt_linked_sequence_tasks": {
+      "field_label": "Tasks <-> cpt linked sequence",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_episode": {
+      "field_label": "Episode",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "tag_list": {
+      "field_label": "Tags",
+      "field_type": "tag_list",
+      "editable": true,
+      "later":true
+    },
+    "sg_tasks": {
+      "field_label": "Task <-> \u573a\u53f7",
+      "field_type": "multi_entity",
+      "editable": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "CustomNonProjectEntity01": {
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "code": {
+      "field_label": "Name",
+      "field_type": "text",
+      "editable": true
+    },
+    "description": {
+      "field_label": "Description",
+      "field_type": "text",
+      "editable": true
+    }
+  }
+}

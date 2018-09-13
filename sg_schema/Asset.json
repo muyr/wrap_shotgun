@@ -1,0 +1,62 @@
+{
+  "Asset": {
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "code": {
+      "field_label": "Asset Name",
+      "field_type": "text"
+    },
+    "name": {
+      "field_label": "Asset Name",
+      "field_type": "text",
+      "inner_code": "code"
+    },
+    "image": {
+      "field_type": "text",
+      "field_label": "Thumbnail"
+    },
+    "tasks": {
+      "field_label": "Tasks",
+      "field_type": "multi_entity"
+    },
+    "sequences": {
+      "field_label": "Sequences",
+      "field_type": "multi_entity"
+    },
+    "parents": {
+      "field_label": "Parent Assets",
+      "field_type": "multi_entity"
+    },
+    "sg_status_list": {
+      "field_type": "text",
+      "field_label": "Status"
+    },
+    "description": {
+      "field_label": "Description",
+      "field_type": "text"
+    },
+    "sg_asset_type": {
+      "field_label": "Type",
+      "field_type": "text"
+    },
+    "assets": {
+      "field_label": "Sub Assets",
+      "field_type": "multi_entity"
+    },
+    "project": {
+      "field_label": "Project",
+      "field_type": "entity"
+    },
+    "shots": {
+      "field_label": "Shots",
+      "field_type": "multi_entity"
+    },
+    "sg_reference_2": {
+      "field_label": "Reference",
+      "field_type": "url"
+    }
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "Task": {
+    "entity": {
+      "field_label": "Link",
+      "field_type": "entity",
+      "editable": true
+    },
+    "sg_plan_day": {
+      "field_label": "Plan Day",
+      "field_type": "duration",
+      "editable": true,
+      "later":true
+    },
+    "sg_crew_project_name": {
+      "field_label": "crew_Project",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "sg_last_version": {
+      "field_label": "Last Version",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "open_notes": {
+      "field_label": "Open Notes",
+      "field_type": "multi_entity",
+      "editable": false,
+      "later":true
+    },
+    "created_by": {
+      "field_label": "Created by",
+      "field_type": "entity",
+      "editable": false,
+      "later":true
+    },
+    "sg_test_done_in_jan_pub": {
+      "field_label": "test_done_in_jan_pub",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "due_date": {
+      "field_label": "Due Date",
+      "field_type": "date",
+      "editable": true
+    },
+    "updated_by": {
+      "field_label": "Updated by",
+      "field_type": "entity",
+      "editable": false,
+      "later":true
+    },
+    "sg_assign_people": {
+      "field_label": "Assign People",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_concepts": {
+      "field_label": "Concept <-> Link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "milestone": {
+      "field_label": "Milestone",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "sg_crew_type": {
+      "field_label": "Crew Type",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "sg_sg_prj": {
+      "field_label": "sg_prj",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_plan_task": {
+      "field_label": "Meta Plan",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "notes": {
+      "field_label": "Notes",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "filmstrip_image": {
+      "field_label": "Filmstrip Thumbnail",
+      "field_type": "image",
+      "editable": true,
+      "later":true
+    },
+    "sg_crew_tag": {
+      "field_label": "Crew Tag",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "task_assignees": {
+      "field_label": "Assigned To",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "sg___": {
+      "field_label": "\u573a\u53f7",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_production_coordinator_note": {
+      "field_label": "Production Coordinator Note",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "duration": {
+      "field_label": "Duration",
+      "field_type": "duration",
+      "editable": true
+    },
+    "sg_______": {
+      "field_label": "\u9884\u8ba1\u5236\u4f5c\u65f6\u957f",
+      "field_type": "duration",
+      "editable": true,
+      "later":true
+    },
+    "time_vs_est": {
+      "field_label": "Time Logged - Over/Under Bid",
+      "field_type": "duration",
+      "editable": false
+    },
+    "content": {
+      "field_label": "Task Name",
+      "field_type": "text",
+      "editable": true
+    },
+    "sg_more_project_person_assigned": {
+      "field_label": "projcet person assigned",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_common": {
+      "field_label": "Common",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "addressings_cc": {
+      "field_label": "Cc",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "dependency_violation": {
+      "field_label": "Dependency Violation",
+      "field_type": "checkbox",
+      "editable": false,
+      "later":true
+    },
+    "template_task": {
+      "field_label": "Template Task",
+      "field_type": "entity",
+      "editable": false,
+      "later":true
+    },
+    "step": {
+      "field_label": "Pipeline Step",
+      "field_type": "entity",
+      "editable": true
+    },
+    "sg_timelog_sum_utility": {
+      "field_label": "Timelog Sum Utility",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_test_done_in_jan": {
+      "field_label": "Test done in Jan",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_last_workfile": {
+      "field_label": "Last Workfile",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_meta_plans": {
+      "field_label": "Meta Plan <-> Plan Task",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "inventory_date": {
+      "field_label": "Inventory Date",
+      "field_type": "date",
+      "editable": false,
+      "later":true
+    },
+    "sg_crew_sequence_name": {
+      "field_label": "Crew Sequence Name",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "tag_list": {
+      "field_label": "Tags",
+      "field_type": "tag_list",
+      "editable": true
+    },
+    "sg_bidding_artist_level": {
+      "field_label": "Bidding Artist Level",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "open_notes_count": {
+      "field_label": "Open Notes Count",
+      "field_type": "summary",
+      "editable": false,
+      "later":true
+    },
+    "sg_last_publish": {
+      "field_label": "Last Publish",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "color": {
+      "field_label": "Gantt Bar Color",
+      "field_type": "color",
+      "editable": true
+    },
+    "sg_versions": {
+      "field_label": "Version <-> Task Linked",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "image": {
+      "field_label": "Thumbnail",
+      "field_type": "image",
+      "editable": true,
+      "later":true
+    },
+    "sg_publish_elements": {
+      "field_label": "Publish Element <-> Task",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_render_farm_tests": {
+      "field_label": "Render Farm Test <-> Task",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_last_version_description": {
+      "field_label": "Last Version Description",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "cached_display_name": {
+      "field_label": "Cached Display Name",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "sg_last_publish_element": {
+      "field_label": "Last Publish Element",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "pinned": {
+      "field_label": "Pinned",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "sg_status_list": {
+      "field_label": "Status",
+      "field_type": "status_list",
+      "editable": true
+    },
+    "time_logs_sum": {
+      "field_label": "Time Logged",
+      "field_type": "duration",
+      "editable": false
+    },
+    "start_date": {
+      "field_label": "Start Date",
+      "field_type": "date",
+      "editable": true
+    },
+    "sg_description": {
+      "field_label": "Description",
+      "field_type": "text",
+      "editable": true
+    },
+    "sg_cpt_linked_sequence": {
+      "field_label": "cpt linked sequence",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_planday_description": {
+      "field_label": "Planday Description",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "sg_crew_plan_workdays": {
+      "field_label": "crew Plan Workdays",
+      "field_type": "float",
+      "editable": true,
+      "later":true
+    },
+    "sg_timelog_sum_overtime": {
+      "field_label": "Timelog Sum Overtime",
+      "field_type": "summary",
+      "editable": true
+    },
+    "time_percent_of_est": {
+      "field_label": "Time Logged - % of Bid",
+      "field_type": "percent",
+      "editable": false
+    },
+    "sg_workfiles": {
+      "field_label": "WorkFile <-> Task",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_temp": {
+      "field_label": "temp",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "splits": {
+      "field_label": "Splits",
+      "field_type": "serializable",
+      "editable": true,
+      "later":true
+    },
+    "project": {
+      "field_label": "Project",
+      "field_type": "entity",
+      "editable": true
+    },
+    "sg_fisrt_timelog": {
+      "field_label": "Fisrt Timelog",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_down_stream_steps": {
+      "field_label": "Down Stream Steps",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_timelogview_people_viewing": {
+      "field_label": "timelogview_people_viewing",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "sg_render_farm_tests_1": {
+      "field_label": "Render Farm Test <-> \u76f8\u5173\u4efb\u52a1",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "split_durations": {
+      "field_label": "Split Durations",
+      "field_type": "serializable",
+      "editable": false,
+      "later":true
+    },
+    "updated_at": {
+      "field_label": "Date Updated",
+      "field_type": "date_time",
+      "editable": false,
+      "later":true
+    },
+    "sg_booking": {
+      "field_label": "Booking",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_production_tasks": {
+      "field_label": "Production Tasks",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_edit_aajust": {
+      "field_label": "Edit_Aajust",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "sg_firsttimelog": {
+      "field_label": "FirstTimeLog",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sg_last_timelog": {
+      "field_label": "last_timelog",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "downstream_tasks": {
+      "field_label": "Downstream Dependency",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "sg______tasklevel_": {
+      "field_label": "\u96be\u5ea6\u7ea7\u522b(TaskLevel)",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "task_template": {
+      "field_label": "Task Template",
+      "field_type": "entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_crewp_artist_level": {
+      "field_label": "Crewp Artist Level",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "sg_notecount": {
+      "field_label": "NoteCount",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "sibling_tasks": {
+      "field_label": "Sibling Tasks",
+      "field_type": "multi_entity",
+      "editable": false
+    },
+    "upstream_tasks": {
+      "field_label": "Upstream Dependency",
+      "field_type": "multi_entity",
+      "editable": true
+    },
+    "sg_ppm_dailies_checkbox": {
+      "field_label": "ppm_Dailies_Checkbox",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "created_at": {
+      "field_label": "Date Created",
+      "field_type": "date_time",
+      "editable": false,
+      "later":true
+    },
+    "sg_first_timelog": {
+      "field_label": "First_TimeLog",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "est_in_mins": {
+      "field_label": "Bid",
+      "field_type": "duration",
+      "editable": true
+    }
+  }
+}

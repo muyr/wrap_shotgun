@@ -1,0 +1,21 @@
+{
+  "Status": {
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "code": {
+      "field_label": "Short Code",
+      "field_type": "text"
+    },
+    "name": {
+      "field_label": "Status Name",
+      "field_type": "text"
+    },
+    "bg_color": {
+      "field_label": "Background Color",
+      "field_type": "text"
+    }
+  }
+}

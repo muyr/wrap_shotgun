@@ -1,0 +1,242 @@
+{
+  "Project": {
+    "tank_name": {
+      "field_label": "Tank Name",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "color": {
+      "field_label": "Color",
+      "field_type": "color",
+      "editable": true,
+      "later":true
+    },
+    "image": {
+      "field_label": "Thumbnail",
+      "field_type": "image",
+      "editable": true,
+      "later":true
+    },
+    "updated_at": {
+      "field_label": "Date Updated",
+      "field_type": "date_time",
+      "editable": false,
+      "later":true
+    },
+    "billboard": {
+      "field_label": "Billboard",
+      "field_type": "url",
+      "editable": true,
+      "later":true
+    },
+    "code": {
+      "field_label": "Code",
+      "field_type": "text",
+      "editable": true
+    },
+    "duration": {
+      "field_label": "Duration",
+      "field_type": "number",
+      "editable": false
+    },
+    "sg_status": {
+      "field_label": "Status",
+      "field_type": "list",
+      "editable": true
+    },
+    "cached_display_name": {
+      "field_label": "Cached Display Name",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "sg_due": {
+      "field_label": "Due",
+      "field_type": "date",
+      "editable": true
+    },
+    "phases": {
+      "field_label": "Phases",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "client_site_settings_saved": {
+      "field_label": "Client Review Site Settings Saved",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "sg_fstemplate": {
+      "field_label": "FSTemplate",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "created_by": {
+      "field_label": "Created by",
+      "field_type": "entity",
+      "editable": false
+    },
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "sg_project_leads": {
+      "field_label": "Project Leads",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "current_user_favorite": {
+      "field_label": "Favorite",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "sg_pipeline_version": {
+      "field_label": "pipeline version",
+      "field_type": "list",
+      "editable": true
+    },
+    "last_accessed_by_current_user": {
+      "field_label": "Last Accessed",
+      "field_type": "date_time",
+      "editable": true,
+      "later":true
+    },
+    "start_date": {
+      "field_label": "Start Date",
+      "field_type": "date",
+      "editable": false
+    },
+    "sg_description": {
+      "field_label": "Description",
+      "field_type": "text",
+      "editable": true
+    },
+    "tracking_settings": {
+      "field_label": "Tracking Settings",
+      "field_type": "serializable",
+      "editable": true,
+      "later":true
+    },
+    "users": {
+      "field_label": "Users",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "end_date": {
+      "field_label": "End Date",
+      "field_type": "date",
+      "editable": false
+    },
+    "archived": {
+      "field_label": "Archived",
+      "field_type": "checkbox",
+      "editable": true,
+      "later":true
+    },
+    "sg_project_mode": {
+      "field_label": "Project Mode",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "sg_concepts": {
+      "field_label": "Concept <-> Link",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_resolution": {
+      "field_label": "Resolution",
+      "field_type": "list",
+      "editable": true
+    },
+    "sg_project_coorinators": {
+      "field_label": "Project Coorinators",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "updated_by": {
+      "field_label": "Updated by",
+      "field_type": "entity",
+      "editable": false,
+      "later":true
+    },
+    "name": {
+      "field_label": "Project Name",
+      "field_type": "text",
+      "editable": true
+    },
+    "sg_people_status": {
+      "field_label": "People Status",
+      "field_type": "status_list",
+      "editable": true,
+      "later":true
+    },
+    "sg_crewplanning_status": {
+      "field_label": "crewPlanning Status",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "created_at": {
+      "field_label": "Date Created",
+      "field_type": "date_time",
+      "editable": false
+    },
+    "ticket_sg_about_projects_tickets": {
+      "field_label": "Tickets <-> About Projects",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "sg_start": {
+      "field_label": "Start",
+      "field_type": "date",
+      "editable": true
+    },
+    "filmstrip_image": {
+      "field_label": "Filmstrip Thumbnail",
+      "field_type": "image",
+      "editable": true,
+      "later":true
+    },
+    "is_template": {
+      "field_label": "Is Template",
+      "field_type": "checkbox",
+      "editable": false,
+      "later":true
+    },
+    "layout_project": {
+      "field_label": "Layout Template",
+      "field_type": "entity",
+      "editable": false,
+      "later":true
+    },
+    "sg_type": {
+      "field_label": "Type",
+      "field_type": "list",
+      "editable": true,
+      "later":true
+    },
+    "tag_list": {
+      "field_label": "Tags",
+      "field_type": "tag_list",
+      "editable": true,
+      "later":true
+    },
+    "sg_tasks": {
+      "field_label": "Task <-> sg_prj",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "Step": {
+    "code": {
+      "field_label": "Pipeline Step",
+      "field_type": "text",
+      "editable": true
+    },
+    "description": {
+      "field_label": "Description",
+      "field_type": "text",
+      "editable": true
+    },
+    "short_name": {
+      "field_label": "Short Code",
+      "field_type": "text",
+      "editable": true
+    },
+    "entity_type": {
+      "field_label": "Entity Type",
+      "field_type": "entity_type",
+      "editable": false
+    },
+    "color": {
+      "field_label": "Color",
+      "field_type": "color",
+      "editable": true,
+      "later":true
+    },
+    "created_at": {
+      "field_label": "Date Created",
+      "field_type": "date_time",
+      "editable": false,
+      "later":true
+    },
+    "list_order": {
+      "field_label": "Order",
+      "field_type": "number",
+      "editable": true,
+      "later":true
+    },
+    "updated_at": {
+      "field_label": "Date Updated",
+      "field_type": "date_time",
+      "editable": false,
+      "later":true
+    },
+    "created_by": {
+      "field_label": "Created by",
+      "field_type": "entity",
+      "editable": false,
+      "later":true
+    },
+    "sg_tasks_counts": {
+      "field_label": "tasks counts",
+      "field_type": "summary",
+      "editable": true,
+      "later":true
+    },
+    "task_sg_down_stream_steps_tasks": {
+      "field_label": "Tasks <-> Down Stream Steps",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "cached_display_name": {
+      "field_label": "Cached Display Name",
+      "field_type": "text",
+      "editable": true,
+      "later":true
+    },
+    "version_sg_down_stream_steps_versions": {
+      "field_label": "Versions <-> Down Stream Steps",
+      "field_type": "multi_entity",
+      "editable": true,
+      "later":true
+    },
+    "id": {
+      "field_label": "Id",
+      "field_type": "number",
+      "editable": false
+    },
+    "updated_by": {
+      "field_label": "Updated by",
+      "field_type": "entity",
+      "editable": false,
+      "later":true
+    }
+  }
+}

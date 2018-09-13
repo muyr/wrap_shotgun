@@ -4,7 +4,7 @@
 # Date  : 2016.11
 # Email : muyanru345@163.com
 ###################################################################
-__all__ = ['Asset', 'Attachment', 'Department', 'HumanUser', 'LocalStorage',
+__all__ = ['Asset', 'Attachment', 'Department', 'Group', 'HumanUser', 'LocalStorage',
            'MyCustomEntity', 'Note', 'Project',
            'Reply', 'Sequence', 'Shot', 'Status', 'Step', 'Task', 'TimeLog', 'Version', 'any_']
 
@@ -395,6 +395,10 @@ class LocalStorage(SGEntityBase):
 
 class Reply(SGEntityBase):
     _repr_field = 'content'
+
+
+class Group(SGEntityBase):
+    pass
 
 
 if __name__ == '__main__':

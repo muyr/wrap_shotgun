@@ -1,0 +1,27 @@
+{
+  "name": {
+    "field_type": "str",
+    "field_label": "Other Works Name",
+    "inner_code": "code"
+  },
+  "description": {
+    "field_type": "str",
+    "field_label": "Description"
+  },
+  "image": {
+    "field_type": "str",
+    "field_label": "Thumbnail"
+  },
+  "project": {
+    "field_type": "entity",
+    "field_label": "Project"
+  },
+  "tasks": {
+    "field_type": "multi_entity",
+    "field_label": "Tasks"
+  },
+  "sg_status_list": {
+    "field_type": "str",
+    "field_label": "Status"
+  }
+}

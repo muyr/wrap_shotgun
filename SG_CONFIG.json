@@ -1,0 +1,7 @@
+{
+  "shotgun": {
+    "url": "http://your.shotgunstudio.com/",
+    "script": "wrapper",
+    "key": "xxxxxx"
+  }
+}

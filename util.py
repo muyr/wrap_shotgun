@@ -25,6 +25,15 @@ def get_shotgun_schema(table, clean=True):
         return fields
 
 
+def get_shotgun_entity(visible=True):
+    my_sg = MyShotgun()
+    data_dict = my_sg.schema_entity_read()
+    if visible:
+        return {table: table_dict.get('name', {}).get('value')
+                for table, table_dict in data_dict.items()
+                if table_dict.get('visible', {}).get('value', False) and not table.count('Connection')}
+
+
 def aaa():
     pass
 
@@ -32,4 +41,5 @@ def aaa():
 if __name__ == '__main__':
     import json
 
-    print json.dumps(get_shotgun_schema('Reply'))
+    # print json.dumps(get_shotgun_schema('Reply'))
+    print get_shotgun_entity()
